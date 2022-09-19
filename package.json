@@ -1,0 +1,31 @@
+{
+  "author": "B2B",
+  "license": "MIT",
+  "name": "erc20-token",
+  "version": "1.0.0",
+  "description": "MECHAX ( Mechadium ) ERC20 Token Contract",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.6",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.3.0",
+    "ethers": "^5.0.32",
+    "hardhat": "^2.6.4",
+    "hardhat-deploy": "^0.7.0-beta.48",
+    "hardhat-deploy-ethers": "^0.3.0-beta.7",
+    "solidity-coverage": "^0.7.16"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "scripts": {
+    "deploy": "npx hardhat run --network {network_name} ../deploy.js",
+    "verify": "npx hardhat verify --network {network_name} {contract_address} {args}",
+    "test": "npx hardhat test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mechaversus/erc20-token.git"
+  }
+}
